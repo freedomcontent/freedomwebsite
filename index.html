@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современный сайт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('pexels-robert-clark-504241532-20856358.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+            max-width: 500px;
+            position: relative;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .heart-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 3px solid white;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 60px;
+        }
+        .text-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 25px;
+            margin-top: 15px;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .social {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social a {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .social a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            background: linear-gradient(45deg, #000000, #000000);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="загруженное.jpg" alt="Heart Image" class="heart-img">
+        <h1 style="font-family: 'Playfair Display', serif;"></h1>
+        <p class="text-box">Добро пожаловать!</p>
+        <div class="social">
+            <a href="https://t.me/freedomcontent">Telegram</a>
+            <a href="https://instagram.com/xx.begi">Instagram</a>
+            <a href="https://www.tiktok.com/@freedomcontent">TikTok</a>
+        </div>
+        <a href="https://t.me/xxbegi" class="button">Связаться</a>
+    </div>
+    <footer>
+        &copy; 2025 Современный сайт. Все права защищены. <a href="mailto:begzod.ismatullaev@bk.ru">Связаться по почте</a>
+    </footer>
+</body>
+</html>
